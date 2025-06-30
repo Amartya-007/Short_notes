@@ -526,7 +526,37 @@
                         options: ["It defaults to 0", "It causes a syntax error", "It may contain garbage value", "It prints 'null'"],
                         answer: 2,
                         explanation: "Uninitialized variables in C contain unpredictable (garbage) values."
-                    }
+                    },
+                    {
+        question: "Which is a valid variable declaration in Python?",
+        options: ["int x = 5;", "x = 5", "var x = 5;", "int x; x = 5;"],
+        answer: 1,
+        explanation: "In Python, you just write 'x = 5'. No type declaration needed."
+    },
+    {
+        question: "What happens if you use an uninitialized variable in C?",
+        options: ["It defaults to 0", "It causes a syntax error", "It may contain garbage value", "It prints 'null'"],
+        answer: 2,
+        explanation: "Uninitialized variables in C contain unpredictable (garbage) values."
+    },
+    {
+        question: "Which of the following is NOT a valid variable name?",
+        options: ["_value", "2value", "value_2", "val2"],
+        answer: 1,
+        explanation: "Variable names cannot start with a digit."
+    },
+    {
+        question: "What does a variable actually store?",
+        options: ["Its memory address", "Its name", "A fixed value forever", "A value that can change during execution"],
+        answer: 3,
+        explanation: "A variable stores a value that can change during the program’s execution."
+    },
+    {
+        question: "What is the purpose of a variable in programming?",
+        options: ["To repeat code automatically", "To store data with a name for later use", "To write comments", "To end a program"],
+        answer: 1,
+        explanation: "Variables store data in memory so you can use or modify it later in your program."
+    }
                 ],
                 interview_qa: [
                     {
@@ -564,7 +594,37 @@
                         options: ["1 byte", "2 bytes", "4 bytes", "Depends on compiler"],
                         answer: 0,
                         explanation: "A 'char' is always 1 byte in C."
-                    }
+                    },
+                    {
+        question: "Which of these is NOT a primitive data type?",
+        options: ["int", "float", "string", "bool"],
+        answer: 2,
+        explanation: "'string' is not a primitive type in C/C++; it's a class in C++ and a built-in type in Python."
+    },
+    {
+        question: "What is the size of a 'char' in C?",
+        options: ["1 byte", "2 bytes", "4 bytes", "Depends on compiler"],
+        answer: 0,
+        explanation: "A 'char' is always 1 byte in C."
+    },
+    {
+        question: "Which data type is best for storing True/False values?",
+        options: ["char", "int", "bool", "float"],
+        answer: 2,
+        explanation: "'bool' is specifically used for boolean values like True and False."
+    },
+    {
+        question: "What will be the data type of '5.0' in Python?",
+        options: ["int", "float", "str", "bool"],
+        answer: 1,
+        explanation: "In Python, a number with a decimal point is treated as a float by default."
+    },
+    {
+        question: "Why is choosing the correct data type important?",
+        options: ["To make the code look longer", "To confuse other programmers", "To ensure memory efficiency and correctness", "To avoid writing functions"],
+        answer: 2,
+        explanation: "Using the right data type ensures optimal memory usage and accurate results during operations."
+    }
                 ],
                 interview_qa: [
                     {
@@ -608,7 +668,37 @@
                         options: ["scanf(\"%s\", str);", "gets(str);", "fgets(str, sizeof(str), stdin);", "readline(str);"],
                         answer: 2,
                         explanation: "fgets is safer and reads a line of text including spaces."
-                    }
+                    },
+                    {
+        question: "Which function is used for input in C?",
+        options: ["printf", "scanf", "input", "cin"],
+        answer: 1,
+        explanation: "'scanf' is used for input in C."
+    },
+    {
+        question: "What does 'print()' do in Python?",
+        options: ["Takes input", "Displays output", "Declares a variable", "None of the above"],
+        answer: 1,
+        explanation: "'print()' displays output to the console in Python."
+    },
+    {
+        question: "How do you read a full line of text in C?",
+        options: ["scanf(\"%s\", str);", "gets(str);", "fgets(str, sizeof(str), stdin);", "readline(str);"],
+        answer: 2,
+        explanation: "fgets is safer and reads a line of text including spaces."
+    },
+    {
+        question: "Which function is used to take input from the user in Python?",
+        options: ["input()", "scanf()", "cin", "getchar()"],
+        answer: 0,
+        explanation: "'input()' reads user input from the console as a string in Python."
+    },
+    {
+        question: "What is the purpose of I/O in programming?",
+        options: ["To process data internally", "To connect to the internet", "To interact with users or external systems", "To execute loops"],
+        answer: 2,
+        explanation: "I/O allows a program to receive data (input) and present results or information (output)."
+    }
                 ],
                 interview_qa: [
                     {
@@ -652,7 +742,37 @@
                         options: ["Hi", "Bye", "Error", "Nothing"],
                         answer: 0,
                         explanation: "x is 10, which is greater than 5, so 'Hi' is printed."
-                    }
+                    },
+                    {
+        question: "What is the output of: if (5 > 3) printf(\"Yes\"); else printf(\"No\"); ?",
+        options: ["Yes", "No", "Error", "Nothing"],
+        answer: 0,
+        explanation: "5 > 3 is true, so 'Yes' is printed."
+    },
+    {
+        question: "Which Python keyword is used for an alternative condition?",
+        options: ["elseif", "elif", "else if", "otherwise"],
+        answer: 1,
+        explanation: "'elif' is used for else-if in Python."
+    },
+    {
+        question: "What will this print? x = 10; if x > 5: print('Hi') else print('Bye')",
+        options: ["Hi", "Bye", "Error", "Nothing"],
+        answer: 0,
+        explanation: "x is 10, which is greater than 5, so 'Hi' is printed."
+    },
+    {
+        question: "What happens if the 'if' condition is false and there's no 'else'?",
+        options: ["It prints an error", "The program crashes", "Nothing is executed", "It always runs the next line"],
+        answer: 2,
+        explanation: "If the condition is false and there's no 'else', the block is skipped."
+    },
+    {
+        question: "Which operator is typically used to compare two values in a condition?",
+        options: ["=", "==", "!=", "++"],
+        answer: 1,
+        explanation: "'==' is the equality operator used to compare values."
+    }
                 ],
                 interview_qa: [
                     {
@@ -696,7 +816,37 @@
                         options: ["while (i <= 10) {", "while i <= 10:", "do { while (i <= 10);", "for (i = 0; i <= 10; i++) {"],
                         answer: 0,
                         explanation: "A while loop in C starts with 'while (condition) {'."
-                    }
+                    },
+                     {
+        question: "Which loop is best when you know the number of iterations?",
+        options: ["for", "while", "do-while", "if"],
+        answer: 0,
+        explanation: "A 'for' loop is ideal when the number of iterations is known."
+    },
+    {
+        question: "What is the output of: for (int i=0; i<3; i++) printf(\"%d \", i); ?",
+        options: ["0 1 2", "1 2 3", "0 1 2 3", "Error"],
+        answer: 0,
+        explanation: "The loop prints 0, 1, and 2."
+    },
+    {
+        question: "How does a while loop start in C?",
+        options: ["while (i <= 10) {", "while i <= 10:", "do { while (i <= 10);", "for (i = 0; i <= 10; i++) {"],
+        answer: 0,
+        explanation: "A while loop in C starts with 'while (condition) {'."
+    },
+    {
+        question: "Which Python keyword starts a loop that repeats as long as a condition is true?",
+        options: ["repeat", "loop", "while", "check"],
+        answer: 2,
+        explanation: "'while' is used in Python to run a loop while a condition is true."
+    },
+    {
+        question: "What happens if a loop’s condition is never false?",
+        options: ["The loop runs once", "The loop is skipped", "It causes an infinite loop", "It shows an error"],
+        answer: 2,
+        explanation: "If the loop condition is always true, the loop will run infinitely unless broken manually."
+    }
                 ],
                 interview_qa: [
                     {
@@ -740,7 +890,37 @@
                         options: ["calculate()", "call calculate", "calculate[]", "execute calculate()"],
                         answer: 0,
                         explanation: "You call a function in C by using its name followed by parentheses."
-                    }
+                    },
+                    {
+        question: "Which keyword is used to define a function in Python?",
+        options: ["function", "def", "func", "define"],
+        answer: 1,
+        explanation: "'def' is used to define a function in Python."
+    },
+    {
+        question: "What is the return type of 'main' in C?",
+        options: ["void", "int", "char", "float"],
+        answer: 1,
+        explanation: "'main' returns an int in standard C."
+    },
+    {
+        question: "How do you call a function named 'calculate' in C?",
+        options: ["calculate()", "call calculate", "calculate[]", "execute calculate()"],
+        answer: 0,
+        explanation: "You call a function in C by using its name followed by parentheses."
+    },
+    {
+        question: "Which of these is a benefit of using functions?",
+        options: ["Increases repetition", "Makes code more complicated", "Promotes modularity", "Slows down execution"],
+        answer: 2,
+        explanation: "Functions promote modularity by breaking code into manageable parts."
+    },
+    {
+        question: "What does a 'return' statement do in a function?",
+        options: ["It prints the result", "It exits the program", "It returns a value from the function", "It declares a new function"],
+        answer: 2,
+        explanation: "'return' sends a value back to the caller of the function."
+    }
                 ],
                 interview_qa: [
                     {
@@ -784,7 +964,37 @@
                         options: ["int arr[10];", "array int[10];", "int[10] arr;", "declare arr[10] as int;"],
                         answer: 0,
                         explanation: "int arr[10]; declares an array of 10 integers in C."
-                    }
+                    },
+                    {
+        question: "What is the index of the first element in a C array?",
+        options: ["0", "1", "-1", "Depends on compiler"],
+        answer: 0,
+        explanation: "Array indices start at 0 in C/C++ and Python."
+    },
+    {
+        question: "Which of these is a valid Python list?",
+        options: ["arr = [1, 2, 3]", "arr = (1, 2, 3)", "arr = {1, 2, 3}", "arr = <1, 2, 3>"],
+        answer: 0,
+        explanation: "Square brackets are used for lists in Python."
+    },
+    {
+        question: "How do you declare an array of 10 integers in C?",
+        options: ["int arr[10];", "array int[10];", "int[10] arr;", "declare arr[10] as int;"],
+        answer: 0,
+        explanation: "int arr[10]; declares an array of 10 integers in C."
+    },
+    {
+        question: "What makes a Python list more flexible than a C array?",
+        options: ["Lists are faster", "Lists are stored in RAM", "Lists can grow, shrink, and hold mixed types", "Lists don't need memory"],
+        answer: 2,
+        explanation: "Python lists are dynamic and can hold elements of different types."
+    },
+    {
+        question: "What is the main purpose of using an array?",
+        options: ["To perform complex math", "To store multiple values in a single variable", "To display text", "To take user input"],
+        answer: 1,
+        explanation: "Arrays store multiple values in contiguous memory using a single name."
+    }
                 ],
                 interview_qa: [
                     {
@@ -828,7 +1038,37 @@
                         options: ["length()", "size()", "strlen()", "str.size()"],
                         answer: 2,
                         explanation: "strlen() is used to find the length of a C-style string."
-                    }
+                    },
+                    {
+        question: "How do you declare a string in C?",
+        options: ["char s[] = \"abc\";", "string s = 'abc';", "str s = \"abc\";", "s = \"abc\";"],
+        answer: 0,
+        explanation: "In C, strings are declared as character arrays, e.g., char s[] = \"abc\";"
+    },
+    {
+        question: "Are Python strings mutable?",
+        options: ["Yes", "No", "Sometimes", "Only in Python 2"],
+        answer: 1,
+        explanation: "Strings in Python are immutable, meaning their content cannot be changed after creation."
+    },
+    {
+        question: "Which C++ object provides string manipulation functions?",
+        options: ["char[]", "std::string", "text", "cstring"],
+        answer: 1,
+        explanation: "C++ offers the std::string class with powerful string operations."
+    },
+    {
+        question: "Which method returns the number of characters in a C++ string object?",
+        options: ["length()", "size()", "strlen()", "Both length() and size()"],
+        answer: 3,
+        explanation: "Both length() and size() methods return the number of characters in a C++ string."
+    },
+    {
+        question: "How would you concatenate two strings in Python?",
+        options: ["Using + operator", "Using , operator", "Using join()", "Using & operator"],
+        answer: 0,
+        explanation: "You can concatenate strings in Python using the + operator."
+    }
                 ],
                 interview_qa: [
                     {
@@ -872,7 +1112,38 @@
                         options: ["p is an integer", "p is a pointer to an integer", "p is a pointer to a pointer", "None of the above"],
                         answer: 1,
                         explanation: "int *p; means p is a pointer that points to an integer variable."
-                    }
+                    },
+                    {
+        question: "Which symbol is used to declare a pointer in C?",
+        options: ["&", "*", "@", "#"],
+        answer: 1,
+        explanation: "The '*' symbol is used to declare a pointer."
+    },
+    {
+        question: "Does Python have explicit pointers?",
+        options: ["Yes", "No", "Only in Python 2", "Only for lists"],
+        answer: 1,
+        explanation: "Python abstracts away pointers; you don't use them directly."
+    },
+    {
+        question: "What does this declaration mean? int *p;",
+        options: ["p is an integer", "p is a pointer to an integer", "p is a pointer to a pointer", "None of the above"],
+        answer: 1,
+        explanation: "int *p; means p is a pointer that points to an integer variable."
+    },
+    {
+        question: "Which operator gives the address of a variable in C?",
+        options: ["*", "&", "%", "$"],
+        answer: 1,
+        explanation: "The '&' operator returns the memory address of a variable."
+    },
+    {
+        question: "What does *ptr do in C?",
+        options: ["Declares a pointer", "Accesses the address", "Accesses the value stored at the pointer’s address", "Converts an integer to a pointer"],
+        answer: 2,
+        explanation: "*ptr is used to dereference the pointer and access the value at the memory address it points to."
+    }
+
                 ],
                 interview_qa: [
                     {
@@ -916,8 +1187,37 @@
                         options: [".attribute", "->attribute", "attribute()", "get.attribute()"],
                         answer: 0,
                         explanation: "You access an object's attribute in Python using the dot (.) notation."
-                    }
-                ],
+                    },
+                    {
+        question: "Which keyword is used to define a class in C++?",
+        options: ["object", "class", "struct", "define"],
+        answer: 1,
+        explanation: "'class' is used to define a class in C++."
+    },
+    {
+        question: "What is an object?",
+        options: ["A variable", "A function", "An instance of a class", "A data type"],
+        answer: 2,
+        explanation: "An object is an instance of a class."
+    },
+    {
+        question: "How do you access an object's attribute in Python?",
+        options: [".attribute", "->attribute", "attribute()", "get.attribute()"],
+        answer: 0,
+        explanation: "You access an object's attribute in Python using the dot (.) notation."
+    },
+    {
+        question: "What is the purpose of the __init__ method in Python classes?",
+        options: ["To delete the object", "To define attributes", "To initialize the object", "To print values"],
+        answer: 2,
+        explanation: "__init__ is a constructor method used to initialize the object when it is created."
+    },
+    {
+        question: "Which access specifier allows members to be accessed only within the class in C++?",
+        options: ["public", "private", "protected", "default"],
+        answer: 1,
+        explanation: "The 'private' access specifier restricts access to class members from outside the class."
+    }],
                 interview_qa: [
                     {
                         question: "What is encapsulation?",
@@ -954,7 +1254,37 @@
                         options: ["Yes", "No", "Only in Python", "Only in C++"],
                         answer: 0,
                         explanation: "Child classes can override parent methods in both C++ and Python."
-                    }
+                    },
+                    {
+        question: "Which symbol is used for inheritance in C++?",
+        options: [":", "->", "::", "#"],
+        answer: 0,
+        explanation: "':' is used for inheritance in C++."
+    },
+    {
+        question: "Can a child class override parent methods?",
+        options: ["Yes", "No", "Only in Python", "Only in C++"],
+        answer: 0,
+        explanation: "Child classes can override parent methods in both C++ and Python."
+    },
+    {
+        question: "What type of relationship does inheritance establish?",
+        options: ["has-a", "is-a", "uses-a", "belongs-to"],
+        answer: 1,
+        explanation: "Inheritance creates an 'is-a' relationship between child and parent classes."
+    },
+    {
+        question: "Which keyword is used in Python to create a derived class?",
+        options: ["extends", "inherits", "class", "super"],
+        answer: 2,
+        explanation: "'class' is used in Python to define both base and derived classes."
+    },
+    {
+        question: "What is the base class in the following code? class Dog(Animal):",
+        options: ["Dog", "Animal", "Base", "None"],
+        answer: 1,
+        explanation: "The base (parent) class is 'Animal'."
+    }
                 ],
                 interview_qa: [
                     {
@@ -998,7 +1328,25 @@
                         options: ["Python", "C++", "JavaScript", "Ruby"],
                         answer: 1,
                         explanation: "C++ is a compiled language, unlike Python and JavaScript which are interpreted."
-                    }
+                    },
+                    {
+    question: "What is the output of a compiler?",
+    options: ["Source code", "Executable file", "Bytecode", "Syntax tree"],
+    answer: 1,
+    explanation: "A compiler translates source code into an executable file (machine code)."
+},
+{
+    question: "Which runs line by line at runtime?",
+    options: ["Compiler", "Assembler", "Interpreter", "Linker"],
+    answer: 2,
+    explanation: "An interpreter executes code line by line during runtime."
+},
+{
+    question: "What is the main advantage of compilation?",
+    options: ["Faster execution", "Easier debugging", "More memory", "None"],
+    answer: 0,
+    explanation: "Compiled code generally runs faster than interpreted code."
+}
                 ],
                 interview_qa: [
                     {
@@ -1042,7 +1390,20 @@
                         options: ["Classes", "Functions", "Pointers", "Preprocessor directives"],
                         answer: 0,
                         explanation: "C++ supports classes for object-oriented programming, which C lacks."
-                    }
+                    },
+                    {
+    question: "Which language is most suitable for beginners due to its readability?",
+    options: ["C", "C++", "Python", "Assembly"],
+    answer: 2,
+    explanation: "Python has a clean syntax that's easier for beginners to read and write."
+},
+{
+    question: "Which language requires manual memory management?",
+    options: ["Python", "C++", "C", "Both C and C++"],
+    answer: 3,
+    explanation: "Both C and C++ require manual memory management using pointers."
+}
+
                 ],
                 interview_qa: [
                     {
@@ -1130,7 +1491,20 @@
                         options: ["To include standard input/output stream objects", "To define the main function", "To perform mathematical operations", "To include string handling functions"],
                         answer: 0,
                         explanation: "#include <iostream> is used to include the standard input/output stream objects in C++."
-                    }
+                    },
+                    {
+    question: "What happens if you forget to include a necessary header file in C?",
+    options: ["Code runs fine", "Compiler will throw an error", "It will use default settings", "Only warnings appear"],
+    answer: 1,
+    explanation: "The compiler throws an error because it doesn’t recognize the functions you’re using without the header."
+},
+{
+    question: "Which Python statement imports only the 'sqrt' function from the math module?",
+    options: ["import sqrt from math", "from math import sqrt", "include math.sqrt", "math.sqrt = import"],
+    answer: 1,
+    explanation: "'from math import sqrt' imports only the sqrt function from the math module."
+}
+
                 ],
                 interview_qa: [
                     {
@@ -1174,7 +1548,30 @@
                         options: ["By ignoring it", "By rewriting the code", "By using a debugger", "By adding comments"],
                         answer: 1,
                         explanation: "You fix a syntax error by correcting the code according to the language rules."
-                    }
+                    },
+                    {
+    question: "Which of the following is a syntax error in C?",
+    options: [
+        "int x = 5;",
+        "printf(\"%d\", x);",
+        "if (x > 3) printf(\"Hi\");",
+        "int y = 5",
+    ],
+    answer: 3,
+    explanation: "Missing semicolon after variable declaration is a syntax error in C."
+},
+{
+    question: "What kind of error is caused by forgetting a closing parenthesis in Python?",
+    options: [
+        "Runtime Error",
+        "Logical Error",
+        "Syntax Error",
+        "Type Error"
+    ],
+    answer: 2,
+    explanation: "Forgetting a closing parenthesis causes a syntax error because it breaks the language's structure."
+}
+
                 ],
                 interview_qa: [
                     {
@@ -1188,49 +1585,91 @@
                 ]
             },
             {
-                title: "20. What is the output of basic programs?",
-                explanation: "This question is all about tracing code: reading it line by line and figuring out exactly what it *does* and what it will show or produce. It tests your basic understanding of how operations work and how variables change values.",
-                professional_answer: "The output of a program is the tangible result produced by the program's execution. This typically involves displaying values, messages, or other processed data to the user on a console, graphical interface, or by writing to a file or other external system. Determining the output requires a clear understanding of the program's logic, data flow, and execution path.",
-                code_cpp: `int a = 5, b = 3;\nprintf("%d", a + b); // Prints the sum of a and b\n// Output: 8`,
-                code_python: `a = 5\nb = 3\nprint(a + b) # Prints the sum of a and b\n# Output: 8`,
-                practical_title: "Multiplying two numbers and printing the result:",
-                practical_cpp: `int a = 4, b = 5;\nprintf("%d", a * b); // Multiplies a and b, then prints the result\n// Output: 20`,
-                practical_python: `a = 4\nb = 5\nprint(a * b)  # Multiplies a and b, then prints the result\n# Output: 20`,
-                flashcard: {
-                    question: "What does 'output' mean in programming?",
-                    answer: "The result produced by running a program."
-                },
-                quiz: [
-                    {
-                        question: "What is the output of: int a = 2, b = 3; printf(\"%d\", a + b); ?",
-                        options: ["5", "6", "23", "Error"],
-                        answer: 0,
-                        explanation: "2 + 3 = 5, so '5' is printed."
-                    },
-                    {
-                        question: "What is the output of: print(2 * 3) in Python?",
-                        options: ["5", "6", "23", "Error"],
-                        answer: 1,
-                        explanation: "2 * 3 = 6, so '6' is printed."
-                    },
-                    {
-                        question: "What will this print? x = 10; printf('%d', x++);",
-                        options: ["10", "11", "Error", "Nothing"],
-                        answer: 0,
-                        explanation: "x++ prints the value before incrementing, so it prints 10."
-                    }
-                ],
-                interview_qa: [
-                    {
-                        question: "How do you predict the output of a program?",
-                        answer: "By tracing the code line by line and understanding variable changes."
-                    },
-                    {
-                        question: "Why is it important to know the output?",
-                        answer: "It helps verify that your code works as intended."
-                    }
-                ]
-            },
+  "title": "20. What is the output of basic programs?",
+  "explanation": "This question is all about tracing code: reading it line by line and figuring out exactly what it *does* and what it will show or produce. It tests your basic understanding of how operations work and how variables change values.",
+  "professional_answer": "The output of a program is the tangible result produced by the program's execution. This typically involves displaying values, messages, or other processed data to the user on a console, graphical interface, or by writing to a file or other external system. Determining the output requires a clear understanding of the program's logic, data flow, and execution path.",
+  "code_cpp": "int a = 5, b = 3;\nprintf(\"%d\", a + b); // Prints the sum of a and b\n// Output: 8",
+  "code_python": "a = 5\nb = 3\nprint(a + b) # Prints the sum of a and b\n# Output: 8",
+  "practical_title": "Multiplying two numbers and printing the result:",
+  "practical_cpp": "int a = 4, b = 5;\nprintf(\"%d\", a * b); // Multiplies a and b, then prints the result\n// Output: 20",
+  "practical_python": "a = 4\nb = 5\nprint(a * b)  # Multiplies a and b, then prints the result\n# Output: 20",
+  "flashcard": {
+    "question": "What does 'output' mean in programming?",
+    "answer": "The result produced by running a program."
+  },
+  "quiz": [
+    {
+      "question": "What is the output of: int a = 2, b = 3; printf(\"%d\", a + b); ?",
+      "options": ["5", "6", "23", "Error"],
+      "answer": 0,
+      "explanation": "2 + 3 = 5, so '5' is printed."
+    },
+    {
+      "question": "What is the output of: print(2 * 3) in Python?",
+      "options": ["5", "6", "23", "Error"],
+      "answer": 1,
+      "explanation": "2 * 3 = 6, so '6' is printed."
+    },
+    {
+      "question": "What will this print? int x = 10; printf(\"%d\", x++);",
+      "options": ["10", "11", "Error", "Nothing"],
+      "answer": 0,
+      "explanation": "x++ prints the value before incrementing, so it prints 10."
+    },
+    {
+      "question": "What is the output of: a = 10; b = 2; print(a // b)?",
+      "options": ["5", "5.0", "5.00", "Error"],
+      "answer": 0,
+      "explanation": "Floor division 10 // 2 is 5."
+    },
+    {
+      "question": "What will this C code output? int a = 3, b = 2; printf(\"%d\", a * b + 1);",
+      "options": ["7", "6", "5", "Error"],
+      "answer": 0,
+      "explanation": "3 * 2 + 1 = 7."
+    },
+    {
+      "question": "Output of: x = 4; x += 2; print(x)?",
+      "options": ["4", "2", "6", "Error"],
+      "answer": 2,
+      "explanation": "x += 2 increases x from 4 to 6."
+    },
+    {
+      "question": "What is printed: int a = 1; printf(\"%d\", ++a);",
+      "options": ["1", "2", "Error", "Undefined"],
+      "answer": 1,
+      "explanation": "++a pre-increments a to 2 before printing."
+    },
+    {
+      "question": "Python output: print(\"Hello\" + \"World\")?",
+      "options": ["HelloWorld", "Hello World", "Hello+World", "Error"],
+      "answer": 0,
+      "explanation": "String concatenation gives 'HelloWorld'."
+    }
+  ],
+  "interview_qa": [
+    {
+      "question": "How do you predict the output of a program?",
+      "answer": "By tracing the code line by line and understanding variable changes."
+    },
+    {
+      "question": "Why is it important to know the output?",
+      "answer": "It helps verify that your code behaves as expected."
+    },
+    {
+      "question": "Can two different programs give the same output?",
+      "answer": "Yes, different logic or syntax can produce the same result."
+    },
+    {
+      "question": "Does syntax affect the output?",
+      "answer": "Yes. Syntax errors prevent any output, and even small mistakes can change behavior."
+    },
+    {
+      "question": "What tools can help you check output?",
+      "answer": "Debuggers, print statements, IDEs, and online compilers help trace and verify output."
+    }
+  ]
+},
             {
                 title: "21. What is Encapsulation?",
                 explanation: "Encapsulation means bundling data (variables) and methods (functions) that work on that data into a single unit, called a class. It helps protect the data from outside interference and misuse. Think of it as putting your valuables in a locker—you control who can access them!",
@@ -1246,17 +1685,73 @@
                 },
                 quiz: [
                     {
-                        question: "Which keyword is used to restrict access to class members in C++?",
-                        options: ["public", "private", "protected", "static"],
-                        answer: 1,
-                        explanation: "'private' restricts access to class members."
-                    },
-                    {
-                        question: "How do you make a variable private in Python?",
-                        options: ["Use '__' before the name", "Use 'private' keyword", "Use '#'", "You can't"],
-                        answer: 0,
-                        explanation: "Prefixing with '__' makes it private in Python."
-                    }
+    question: "Which keyword is used to restrict access to class members in C++?",
+    options: ["public", "private", "protected", "static"],
+    answer: 1,
+    explanation: "'private' restricts access to class members."
+  },
+  {
+    question: "How do you make a variable private in Python?",
+    options: ["Use '__' before the name", "Use 'private' keyword", "Use '#'", "You can't"],
+    answer: 0,
+    explanation: "Prefixing with '__' makes it private in Python."
+  },
+  {
+    question: "What is encapsulation?",
+    options: [
+      "A technique to inherit behavior from another class",
+      "A process to execute functions in a loop",
+      "Bundling data and functions together while hiding implementation details",
+      "A way to declare global variables"
+    ],
+    answer: 2,
+    explanation: "Encapsulation combines data and methods while restricting direct access to internal details."
+  },
+  {
+    question: "Which of the following is NOT an advantage of encapsulation?",
+    options: ["Code modularity", "Code reusability", "Data hiding", "Increased memory usage"],
+    answer: 3,
+    explanation: "Encapsulation helps reduce complexity, not increase memory usage."
+  },
+  {
+    question: "Which access specifier allows access only within the same class?",
+    options: ["public", "protected", "private", "global"],
+    answer: 2,
+    explanation: "'private' restricts access to the members of the same class only."
+  },
+  {
+    question: "What do getters and setters do in encapsulation?",
+    options: [
+      "Initialize the class",
+      "Modify inheritance behavior",
+      "Provide controlled access to private variables",
+      "Compile the code"
+    ],
+    answer: 2,
+    explanation: "Getters and setters allow controlled access to private members."
+  },
+  {
+    question: "Which of the following best supports encapsulation in Python?",
+    options: [
+      "Using global variables",
+      "Using '__' prefix for private variables",
+      "Using inline functions",
+      "Avoiding class usage"
+    ],
+    answer: 1,
+    explanation: "Prefixing with '__' makes variables private to the class."
+  },
+  {
+    question: "What happens if you try to access a private variable directly in Python?",
+    options: [
+      "It prints the value",
+      "It raises an AttributeError",
+      "It works only in Python 2",
+      "The variable gets converted to string"
+    ],
+    answer: 1,
+    explanation: "Accessing a private variable directly raises an AttributeError."
+  }
                 ],
                 interview_qa: [
                     {
@@ -1284,17 +1779,63 @@
                 },
                 quiz: [
                     {
-                        question: "Which symbol is used for inheritance in C++?",
-                        options: [":", "->", "::", "#"],
-                        answer: 0,
-                        explanation: "':' is used for inheritance in C++."
-                    },
-                    {
-                        question: "Can a child class override parent methods?",
-                        options: ["Yes", "No", "Only in Python", "Only in C++"],
-                        answer: 0,
-                        explanation: "Child classes can override parent methods in both C++ and Python."
-                    }
+    question: "Which symbol is used for inheritance in C++?",
+    options: [":", "->", "::", "#"],
+    answer: 0,
+    explanation: "':' is used for inheritance in C++."
+  },
+  {
+    question: "Can a child class override parent methods?",
+    options: ["Yes", "No", "Only in Python", "Only in C++"],
+    answer: 0,
+    explanation: "Child classes can override parent methods in both C++ and Python."
+  },
+  {
+    question: "Which keyword is used to define a class in Python?",
+    options: ["define", "struct", "class", "object"],
+    answer: 2,
+    explanation: "'class' is used to define a class in Python."
+  },
+  {
+    question: "What does inheritance promote in programming?",
+    options: ["Code repetition", "Code reuse", "Compilation speed", "Slower execution"],
+    answer: 1,
+    explanation: "Inheritance promotes code reuse by allowing child classes to use parent functionality."
+  },
+  {
+    question: "Which of the following best describes inheritance?",
+    options: [
+      "Copying code from one class to another",
+      "A way to prevent method overriding",
+      "A class acquiring properties and behaviors from another class",
+      "A syntax rule in C++"
+    ],
+    answer: 2,
+    explanation: "Inheritance allows a child class to acquire properties from a parent class."
+  },
+  {
+    question: "In Python, what goes inside the parentheses of a class to inherit another?",
+    options: ["The parent class name", "self", "init", "void"],
+    answer: 0,
+    explanation: "The name of the parent class goes inside the parentheses of the child class definition."
+  },
+  {
+    question: "Which type of inheritance allows one class to inherit from multiple classes?",
+    options: ["Multilevel", "Multiple", "Hierarchical", "Single"],
+    answer: 1,
+    explanation: "Multiple inheritance allows one class to inherit from more than one base class."
+  },
+  {
+    question: "What is the output if 'Dog' inherits from 'Animal' and both have a 'speak()' method, and Dog's method is called?",
+    options: [
+      "Animal's speak() runs",
+      "Dog's speak() runs",
+      "Both run",
+      "It gives an error"
+    ],
+    answer: 1,
+    explanation: "Dog's method overrides the one from Animal, so Dog's speak() runs."
+  },
                 ],
                 interview_qa: [
                     {
@@ -1322,17 +1863,53 @@
                 },
                 quiz: [
                     {
-                        question: "Which of these best shows polymorphism?",
-                        options: ["int x = 5;", "Dog and Cat both have 'speak()'", "int arr[5];", "void print(int)"],
-                        answer: 1,
-                        explanation: "Dog and Cat both having 'speak()' is polymorphism."
-                    },
-                    {
-                        question: "What are the two main types of polymorphism?",
-                        options: ["Static and dynamic", "Public and private", "Base and derived", "None"],
-                        answer: 0,
-                        explanation: "Static (compile-time) and dynamic (runtime)."
-                    }
+    question: "Which of these best shows polymorphism?",
+    options: ["int x = 5;", "Dog and Cat both have 'speak()'", "int arr[5];", "void print(int)"],
+    answer: 1,
+    explanation: "Dog and Cat both having 'speak()' is polymorphism."
+  },
+  {
+    question: "What are the two main types of polymorphism?",
+    options: ["Static and dynamic", "Public and private", "Base and derived", "None"],
+    answer: 0,
+    explanation: "Static (compile-time) and dynamic (runtime)."
+  },
+  {
+    question: "Which concept allows a method to act differently based on the object?",
+    options: ["Abstraction", "Inheritance", "Polymorphism", "Encapsulation"],
+    answer: 2,
+    explanation: "Polymorphism allows the same method to behave differently based on the object."
+  },
+  {
+    question: "Which keyword is used in C++ to achieve runtime polymorphism?",
+    options: ["virtual", "final", "override", "public"],
+    answer: 0,
+    explanation: "The 'virtual' keyword enables runtime polymorphism in C++."
+  },
+  {
+    question: "In Python, how is polymorphism commonly achieved?",
+    options: ["Method overloading", "Method overriding", "Pointers", "Header files"],
+    answer: 1,
+    explanation: "Python supports runtime polymorphism through method overriding."
+  },
+  {
+    question: "What does the 'override' keyword indicate in C++?",
+    options: ["Create a new function", "Access a private method", "Override a base class method", "Copy a class"],
+    answer: 2,
+    explanation: "'override' explicitly states that a method overrides a base class version."
+  },
+  {
+    question: "Which principle allows using a base class pointer to call derived class method?",
+    options: ["Abstraction", "Encapsulation", "Polymorphism", "Composition"],
+    answer: 2,
+    explanation: "Polymorphism allows base class pointers to call derived class methods dynamically."
+  },
+  {
+    question: "Which of these is an example of compile-time polymorphism?",
+    options: ["Method overriding", "Virtual functions", "Function overloading", "Abstract class"],
+    answer: 2,
+    explanation: "Function overloading is an example of compile-time polymorphism."
+  }
                 ],
                 interview_qa: [
                     {
@@ -1360,18 +1937,54 @@
                     answer: "Hiding complex details and showing only the essentials."
                 },
                 quiz: [
-                    {
-                        question: "Which keyword is used for abstraction in Python?",
-                        options: ["abstract", "@abstractmethod", "private", "None"],
-                        answer: 1,
-                        explanation: "@abstractmethod is used for abstraction in Python."
-                    },
-                    {
-                        question: "Why use abstraction?",
-                        options: ["To hide details", "To make code longer", "To slow down code", "None"],
-                        answer: 0,
-                        explanation: "Abstraction hides details and simplifies usage."
-                    }
+                     {
+    question: "Which keyword is used for abstraction in Python?",
+    options: ["abstract", "@abstractmethod", "private", "None"],
+    answer: 1,
+    explanation: "@abstractmethod is used for abstraction in Python."
+  },
+  {
+    question: "Why use abstraction?",
+    options: ["To hide details", "To make code longer", "To slow down code", "None"],
+    answer: 0,
+    explanation: "Abstraction hides details and simplifies usage."
+  },
+  {
+    question: "Which C++ concept is used to create abstraction?",
+    options: ["Virtual functions", "Templates", "Abstract classes", "Pointers"],
+    answer: 2,
+    explanation: "Abstract classes with pure virtual functions are used for abstraction in C++."
+  },
+  {
+    question: "What is a pure virtual function in C++?",
+    options: ["A function that always returns zero", "A function without a body", "A static function", "A public function"],
+    answer: 1,
+    explanation: "A pure virtual function is declared with '= 0' and has no implementation in the base class."
+  },
+  {
+    question: "Which module is used for abstraction in Python?",
+    options: ["math", "os", "abc", "sys"],
+    answer: 2,
+    explanation: "The 'abc' module is used for defining abstract base classes in Python."
+  },
+  {
+    question: "Can an abstract class be instantiated directly?",
+    options: ["Yes", "No", "Only in Python", "Only in C++"],
+    answer: 1,
+    explanation: "Abstract classes cannot be instantiated directly."
+  },
+  {
+    question: "What must a class do to implement an abstract method in Python?",
+    options: ["Ignore it", "Call it using super()", "Override it", "Pass it to init"],
+    answer: 2,
+    explanation: "The subclass must override the abstract method to be concrete."
+  },
+  {
+    question: "Which of the following is a benefit of abstraction?",
+    options: ["Code duplication", "More memory use", "Security and simplicity", "Direct memory control"],
+    answer: 2,
+    explanation: "Abstraction improves security and simplifies interfaces by hiding unnecessary details."
+  }
                 ],
                 interview_qa: [
                     {
